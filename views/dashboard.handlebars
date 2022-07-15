@@ -14,6 +14,19 @@
   </form>
 </section>
 
+{{#each posts}}
+ <div class="card">
+   <div class="card-header">
+     <h2>
+       <a href="/post/{{id}}">{{title}}</a>
+     </h2>
+   </div>
+   <div class="card-body">
+     {{body}}
+   </div>
+ </div>
+ {{/each}}
+
 {{#if posts.length}}
 <section>
   <h2>Your Posts</h2>

@@ -1,7 +1,10 @@
+
+
 <ol class="post-list">
-  {{#each posts as |post|}}
-  <li>
-    {{> post-info post }}
-  </li>
-  {{/each}}
+{{#each posts as |post|}}
+<li>
+ <a href="/post/{{id}}">{{title}}</a>
+</li>
+{{/each}}
 </ol>
+
